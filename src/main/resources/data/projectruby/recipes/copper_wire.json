@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "projectruby:copper_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "projectruby:copper_wire",
+    "count": 6
+  }
+}

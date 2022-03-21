@@ -1,0 +1,16 @@
+{
+  "item.projectruby.copper_ingot": "Copper ingot",
+  "item.projectruby.copper_wire": "Copper wire",
+  "item.projectruby.copper_apple": "Coppered apple",
+
+  "block.projectruby.copper_block": "Copper block",
+  "block.projectruby.copper_ore": "Copper ore",
+
+  "item.projectruby.copper_shovel": "Copper Shovel",
+  "item.projectruby.copper_axe": "Copper axe",
+  "item.projectruby.copper_sword": "Copper sword",
+  "item.projectruby.copper_pickaxe": "Copper pickaxe",
+  "item.projectruby.copper_hoe": "Copper hoe",
+
+  "itemGroup.ProjectRuby": "Project Ruby"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "projectruby:copper_ore"
+  },
+  "result": "projectruby:copper_ingot",
+  "experience": 5.0,
+  "cookingtime": 120
+}

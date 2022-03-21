@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "",
+  "ingredients":
+  [
+    {"item": "projectruby:copper_block"}
+  ],
+  "result":
+  {
+    "item": "projectruby:copper_ingot",
+    "count": 9
+  }
+}
+
