@@ -2,6 +2,7 @@ package com.luizavcruz.projectruby.item;
 
 import com.luizavcruz.projectruby.ruby;
 import com.luizavcruz.projectruby.util.KeyboardHelper;
+//import com.mojang.datafixers.types.templates.List;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
@@ -12,13 +13,12 @@ import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
-public class CopperApple extends Item
-{
+public class CopperApple extends Item {
 
-    public CopperApple()
-    {
+    public CopperApple() {
         super(new Properties().group(ruby.RUBY_TAB)
                 .food(new Food.Builder()
                         .hunger(5)
@@ -26,10 +26,10 @@ public class CopperApple extends Item
                         .effect(() -> new EffectInstance(Effects.GLOWING, 300, 1), 0.5f)
                         .build()));
     }
-//yes
+
+
     @Override
-    public void addInformation(ItemStack stack, World world, List<ITextComponent> tooltip,
-                               ITooltipFlag flag)
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flag)
     {
         if(KeyboardHelper.isHoldingShift())
         {
@@ -39,6 +39,6 @@ public class CopperApple extends Item
             tooltip.add(new StringTextComponent("Segure " + "\u00A7e" + "SHIFT" + "\u00A77" + " para mais informacao!"));
         }
 
-        super.addInformation(stack, world, tooltip, flag);
+        //super.addInformation(stack, world, tooltip, flag);
     }
 }
