@@ -12,5 +12,10 @@
   "item.projectruby.copper_pickaxe": "Picareta de cobre",
   "item.projectruby.copper_hoe": "Enxada de cobre",
 
+  "item.projectruby.copper_helmet": "Capacete de cobre",
+  "item.projectruby.copper_chestplate": "Peitoral de cobre",
+  "item.projectruby.copper_leggings": "Calça de cobre",
+  "item.projectruby.copper_boots": "Botas de cobre",
+
   "itemGroup.ProjectRuby": "Project Ruby"
 }

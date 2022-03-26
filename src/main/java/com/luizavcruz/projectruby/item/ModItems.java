@@ -2,8 +2,11 @@ package com.luizavcruz.projectruby.item;
 
 import com.luizavcruz.projectruby.ruby;
 import com.luizavcruz.projectruby.util.Registration;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.util.SoundEvent;
+import net.minecraft.util.SoundEvents;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 
@@ -18,7 +21,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> COPPER_APPLE =
             Registration.ITEMS.register("copper_apple",
-                    () -> new CopperApple());
+                    CopperApple::new);
 
     public static final RegistryObject<Item> COPPER_SHOVEL =
             Registration.ITEMS.register("copper_shovel",
@@ -59,7 +62,95 @@ public class ModItems {
                                     .addToolType(ToolType.AXE, 2)
                                     .group(ruby.RUBY_TAB)));
 
+    public static final RegistryObject<Item> COPPER_HELMET =
+            Registration.ITEMS.register("copper_helmet",
+                    () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.HEAD,
+                            new Item.Properties().group(ruby.RUBY_TAB)));
+
+    public static final RegistryObject<Item> COPPER_CHESTPLATE =
+            Registration.ITEMS.register("copper_chestplate",
+                    () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.CHEST,
+                            new Item.Properties().group(ruby.RUBY_TAB)));
+
+    public static final RegistryObject<Item> COPPER_LEGGINGS =
+            Registration.ITEMS.register("copper_leggings",
+                    () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.LEGS,
+                            new Item.Properties().group(ruby.RUBY_TAB)));
+
+    public static final RegistryObject<Item> COPPER_BOOTS =
+            Registration.ITEMS.register("copper_boots",
+                    () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.FEET,
+                            new Item.Properties().group(ruby.RUBY_TAB)));
+
     public static void register() { }
+
+    public enum ModArmorMaterial implements IArmorMaterial
+    {
+        COPPER(50, new int[] { 2, 7, 5, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_IRON,
+                Ingredient.fromStacks(new ItemStack(ModItems.COPPER_INGOT.get())), ruby.MOD_ID + ":copper", 0, 0.1f);
+
+        private final int durability;
+        private final int[] damageReductionAmountArray;
+        private final int enchantability;
+        private final SoundEvent soundEvent;
+        private final Ingredient repairMaterial;
+        private final String name;
+        private final float toughness;
+        private final float knockbackResistance;
+
+        ModArmorMaterial(int durability, int[] damageReductionAmountArray, int enchantability, SoundEvent soundEvent,
+                         Ingredient repairMaterial, String name, float toughness, float knockbackResistance) {
+            this.durability = durability;
+            this.damageReductionAmountArray = damageReductionAmountArray;
+            this.enchantability = enchantability;
+            this.soundEvent = soundEvent;
+            this.repairMaterial = repairMaterial;
+            this.name = name;
+            this.toughness = toughness;
+            this.knockbackResistance = knockbackResistance;
+        }
+
+
+        @Override
+        public int getDurability(EquipmentSlotType slotIn) {
+            return durability;
+        }
+
+        @Override
+        public int getDamageReductionAmount(EquipmentSlotType slotIn) {
+            return damageReductionAmountArray[slotIn.getIndex()];
+        }
+
+        @Override
+        public int getEnchantability() {
+            return enchantability;
+        }
+
+        @Override
+        public SoundEvent getSoundEvent() {
+            return soundEvent;
+        }
+
+        @Override
+        public Ingredient getRepairMaterial() {
+            return repairMaterial;
+        }
+
+        @Override
+        public String getName() {
+            return name;
+        }
+
+        @Override
+        public float getToughness() {
+            return toughness;
+        }
+
+        @Override
+        public float getKnockbackResistance() {
+            return knockbackResistance;
+        }
+    }
 
     public enum ModItemTier implements IItemTier
     {
