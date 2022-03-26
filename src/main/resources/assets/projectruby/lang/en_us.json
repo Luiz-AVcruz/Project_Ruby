@@ -12,5 +12,10 @@
   "item.projectruby.copper_pickaxe": "Copper pickaxe",
   "item.projectruby.copper_hoe": "Copper hoe",
 
+  "item.projectruby.copper_helmet": "Copper helmet",
+  "item.projectruby.copper_chestplate": "Copper chestplate",
+  "item.projectruby.copper_leggings": "Copper leggings",
+  "item.projectruby.copper_boots": "Copper boots",
+
   "itemGroup.ProjectRuby": "Project Ruby"
 }
