@@ -1,27 +1,22 @@
 {
-  "item.projectruby.copper_ingot": "Copper ingot",
-  "item.projectruby.copper_wire": "Copper wire",
-
-  "item.projectruby.copper_apple": "Coppered apple",
-
-  "block.projectruby.copper_block": "Copper block",
-  "block.projectruby.copper_ore": "Copper ore",
+  "item.projectruby.copper_ingot": "Copper Ingot",
+  "item.projectruby.copper_wire": "Copper Wire",
+  "item.projectruby.copper_apple": "Coppered Apple",
+  "block.projectruby.copper_block": "Copper Block",
+  "block.projectruby.copper_ore": "Copper Ore",
   "block.projectruby.copper_stairs": "Copper Stairs",
   "block.projectruby.copper_fence": "Copper Fence",
   "block.projectruby.copper_fence_gate": "Copper Fence Gate",
   "block.projectruby.copper_button": "Copper Button",
   "block.projectruby.copper_pressure_plate": "Copper Pressure Plate",
-
   "item.projectruby.copper_shovel": "Copper Shovel",
-  "item.projectruby.copper_axe": "Copper axe",
-  "item.projectruby.copper_sword": "Copper sword",
-  "item.projectruby.copper_pickaxe": "Copper pickaxe",
-  "item.projectruby.copper_hoe": "Copper hoe",
-
-  "item.projectruby.copper_helmet": "Copper helmet",
-  "item.projectruby.copper_chestplate": "Copper chestplate",
-  "item.projectruby.copper_leggings": "Copper leggings",
-  "item.projectruby.copper_boots": "Copper boots",
-
+  "item.projectruby.copper_axe": "Copper Axe",
+  "item.projectruby.copper_sword": "Copper Sword",
+  "item.projectruby.copper_pickaxe": "Copper Pickaxe",
+  "item.projectruby.copper_hoe": "Copper Hoe",
+  "item.projectruby.copper_helmet": "Copper Helmet",
+  "item.projectruby.copper_chestplate": "Copper Chestplate",
+  "item.projectruby.copper_leggings": "Copper Leggings",
+  "item.projectruby.copper_boots": "Copper Boots",
   "itemGroup.ProjectRuby": "Project Ruby"
 }
