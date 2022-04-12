@@ -1,6 +1,7 @@
 package com.luizavcruz.projectruby.events;
 
 import com.luizavcruz.projectruby.item.ModItems;
+import com.luizavcruz.projectruby.util.Config;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.passive.SheepEntity;
@@ -35,7 +36,7 @@ public class ModEvents
                     // "deletar" um dos itens na mão
                     player.getHeldItemMainhand().shrink(1);
 
-                    target.addPotionEffect(new EffectInstance(Effects.GLOWING, 600));
+                    target.addPotionEffect(new EffectInstance(Effects.GLOWING, Config.COPPERED_GLOW_DURATION.get()));
 
                     if(!player.world.isRemote())
                     {

@@ -1,6 +1,7 @@
 package com.luizavcruz.projectruby.item;
 
 import com.luizavcruz.projectruby.ruby;
+import com.luizavcruz.projectruby.util.Config;
 import com.luizavcruz.projectruby.util.KeyboardHelper;
 //import com.mojang.datafixers.types.templates.List;
 import net.minecraft.client.util.ITooltipFlag;
@@ -23,7 +24,7 @@ public class CopperApple extends Item {
                 .food(new Food.Builder()
                         .hunger(5)
                         .saturation(1.5f)
-                        .effect(() -> new EffectInstance(Effects.GLOWING, 300, 1), 0.5f)
+                        .effect(() -> new EffectInstance(Effects.GLOWING, Config.COPPERED_GLOW_DURATION.get(), 1), 0.5f)
                         .build()));
     }
 
