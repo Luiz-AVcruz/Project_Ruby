@@ -5,6 +5,11 @@
 
   "block.projectruby.copper_block": "Bloco de cobre",
   "block.projectruby.copper_ore": "Minerio de cobre",
+  "block.projectruby.copper_stairs": "Escada de cobre",
+  "block.projectruby.copper_fence": "Cerca de cobre",
+  "block.projectruby.copper_fence_gate": "Portão de cobre",
+  "block.projectruby.copper_button": "Botão de cobre",
+  "block.projectruby.copper_pressure_plate": "Placa de pressão de cobre",
 
   "item.projectruby.copper_shovel": "Pá de cobre",
   "item.projectruby.copper_axe": "Machado de cobre",

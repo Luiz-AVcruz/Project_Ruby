@@ -1,10 +1,16 @@
 {
   "item.projectruby.copper_ingot": "Copper ingot",
   "item.projectruby.copper_wire": "Copper wire",
+
   "item.projectruby.copper_apple": "Coppered apple",
 
   "block.projectruby.copper_block": "Copper block",
   "block.projectruby.copper_ore": "Copper ore",
+  "block.projectruby.copper_stairs": "Copper Stairs",
+  "block.projectruby.copper_fence": "Copper Fence",
+  "block.projectruby.copper_fence_gate": "Copper Fence Gate",
+  "block.projectruby.copper_button": "Copper Button",
+  "block.projectruby.copper_pressure_plate": "Copper Pressure Plate",
 
   "item.projectruby.copper_shovel": "Copper Shovel",
   "item.projectruby.copper_axe": "Copper axe",

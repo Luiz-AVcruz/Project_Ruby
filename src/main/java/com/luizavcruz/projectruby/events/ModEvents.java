@@ -22,6 +22,7 @@ public class ModEvents
     @SubscribeEvent
     public void onCopperedSheep(AttackEntityEvent event)
     {
+
         if(event.getPlayer().getHeldItemMainhand().getItem() == ModItems.COPPER_APPLE.get())
         {
             if(event.getTarget().isAlive())
