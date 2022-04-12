@@ -1,7 +1,9 @@
 {
   "item.projectruby.copper_ingot": "Copper Ingot",
   "item.projectruby.copper_wire": "Copper Wire",
+
   "item.projectruby.copper_apple": "Coppered Apple",
+
   "block.projectruby.copper_block": "Copper Block",
   "block.projectruby.copper_ore": "Copper Ore",
   "block.projectruby.copper_stairs": "Copper Stairs",
@@ -9,14 +11,17 @@
   "block.projectruby.copper_fence_gate": "Copper Fence Gate",
   "block.projectruby.copper_button": "Copper Button",
   "block.projectruby.copper_pressure_plate": "Copper Pressure Plate",
+
   "item.projectruby.copper_shovel": "Copper Shovel",
   "item.projectruby.copper_axe": "Copper Axe",
   "item.projectruby.copper_sword": "Copper Sword",
   "item.projectruby.copper_pickaxe": "Copper Pickaxe",
   "item.projectruby.copper_hoe": "Copper Hoe",
+
   "item.projectruby.copper_helmet": "Copper Helmet",
   "item.projectruby.copper_chestplate": "Copper Chestplate",
   "item.projectruby.copper_leggings": "Copper Leggings",
   "item.projectruby.copper_boots": "Copper Boots",
+
   "itemGroup.ProjectRuby": "Project Ruby"
 }
