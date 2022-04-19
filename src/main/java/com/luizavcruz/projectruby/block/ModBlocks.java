@@ -15,15 +15,20 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COPPER_BLOCK = register("copper_block",
             () -> new Block(AbstractBlock.Properties.create(Material.IRON)
+
                     .hardnessAndResistance(3f,10f)
-                    .harvestLevel(2).harvestTool(ToolType.PICKAXE)
-                    .sound(SoundType.METAL)));
+                    .harvestLevel(2)
+                    .harvestTool(ToolType.PICKAXE)
+                    .sound(SoundType.METAL)
+                    .jumpFactor(3)));
 
     public static final RegistryObject<Block> COPPER_ORE = register("copper_ore",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(3f,10f)
                     .harvestLevel(2).harvestTool(ToolType.PICKAXE)
                     .sound(SoundType.STONE)));
+
+
 
 
     public static void register() { }
@@ -44,6 +49,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> COPPER_SLAB =
             register("copper_slab", () -> new SlabBlock(AbstractBlock.Properties.create(Material.IRON)));
+
+    public static final RegistryObject<Block> ZUCCINI_CROP =
+            Registration.BLOCKS.register("zuccini_crop",
+                    () -> new ZucciniCrop(AbstractBlock.Properties.from(Blocks.WHEAT)));
 
     private static <T extends Block>RegistryObject<T> register(String name, Supplier<T> block)
     {

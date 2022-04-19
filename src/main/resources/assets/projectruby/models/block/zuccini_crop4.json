@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "projectruby:block/zuccini_crop_stage4"
+  }
+}

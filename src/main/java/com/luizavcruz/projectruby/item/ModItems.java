@@ -1,5 +1,6 @@
 package com.luizavcruz.projectruby.item;
 
+import com.luizavcruz.projectruby.block.ModBlocks;
 import com.luizavcruz.projectruby.ruby;
 import com.luizavcruz.projectruby.util.Registration;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -81,6 +82,10 @@ public class ModItems {
             Registration.ITEMS.register("copper_boots",
                     () -> new ArmorItem(ModArmorMaterial.COPPER, EquipmentSlotType.FEET,
                             new Item.Properties().group(ruby.RUBY_TAB)));
+
+    public static final RegistryObject<Item> ZUCCINI_SEED =
+            Registration.ITEMS.register("zuccini_seed",
+            () -> new BlockItem(ModBlocks.ZUCCINI_CROP.get(), new Item.Properties().group(ruby.RUBY_TAB)));
 
     public static void register() { }
 
